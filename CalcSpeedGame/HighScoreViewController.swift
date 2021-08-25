@@ -37,6 +37,7 @@ class HighScoreViewController: UIViewController {
         dismiss(animated: true, completion: nil)
         sound.playSound(name: "decide")
         
+        
     }
     
 
