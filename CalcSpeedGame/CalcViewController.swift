@@ -59,6 +59,33 @@ class CalcViewController: UIViewController{
         num7 = appDelegate.num7
         num8 = appDelegate.num8
         
+        
+        
+        debugPrint(mode)
+        debugPrint(num1)
+        
+        if mode == 5{
+            let select = Int.random(in: 1...4)
+            switch select {
+                case 1:
+                    makeNewQuestion()
+                case 2:
+                    makeMinusNewQuestion()
+                case 3:
+                    makeTimesNewQuestion()
+                case 4:
+                    makedivdeNewQuestion()
+                default:
+                    makeNewQuestion()
+            }
+        }
+        setButttonTitle()
+        
+        button1.addTarget(self, action: #selector(onButton(_:)), for: .touchUpInside)
+        button2.addTarget(self, action: #selector(onButton(_:)), for: .touchUpInside)
+        button3.addTarget(self, action: #selector(onButton(_:)), for: .touchUpInside)
+        button4.addTarget(self, action: #selector(onButton(_:)), for: .touchUpInside)
+        
 
 
         // Do any additional setup after loading the view.
@@ -71,7 +98,7 @@ class CalcViewController: UIViewController{
         super.viewWillAppear(animated)
         debugPrint(mode)
         debugPrint(num1)
-        
+
         if mode == 1{
             print("足し算モード")
             makeNewQuestion()
@@ -100,7 +127,7 @@ class CalcViewController: UIViewController{
             }
         }
         setButttonTitle()
-        
+
         button1.addTarget(self, action: #selector(onButton(_:)), for: .touchUpInside)
         button2.addTarget(self, action: #selector(onButton(_:)), for: .touchUpInside)
         button3.addTarget(self, action: #selector(onButton(_:)), for: .touchUpInside)
@@ -181,42 +208,45 @@ class CalcViewController: UIViewController{
     }
 //    足し算の問題を作る関数
     func makeNewQuestion(){
-        let bigNum = searchbigNum(n1: num1, n2: num2)
-        let a1 = Int.random(in: 0...bigNum)
-        let a2 = Int.random(in: 0...bigNum)
-        questionLabel.text = "\(a1) + \(a2) = "
-        answer = a1 + a2
+
+        let a1 = Int.random(in: 0...num1)
+        let a2 = Int.random(in: 0...num2)
+        questionLabel.text = "\(a2) + \(a1) = "
+        answer = a2 + a1
     }
 //    引き算の問題をつくる関数
     func makeMinusNewQuestion(){
-        let bigNum = searchbigNum(n1: num1, n2: num2)
-        let a1 = Int.random(in: 0...bigNum)
-        let a2 = Int.random(in: 0...bigNum)
-        questionLabel.text = "\(a1) - \(a2) = "
-        answer = a1 - a2
+        let a1 = Int.random(in: 0...num3)
+        let a2 = Int.random(in: 0...num4)
+        questionLabel.text = "\(a2) - \(a1) = "
+        answer = a2 - a1
     }
 //    掛け算の問題を作る関数
     func makeTimesNewQuestion(){
-        let bigNum = searchbigNum(n1: num1, n2: num2)
-        let a1 = Int.random(in: 0...bigNum)
-        let a2 = Int.random(in: 0...bigNum)
-        questionLabel.text = "\(a1) × \(a2) = "
-        answer = a1 * a2
+        let a1 = Int.random(in: 0...num5)
+        let a2 = Int.random(in: 0...num6)
+        questionLabel.text = "\(a2) × \(a1) = "
+        answer = a2 * a1
         print(answer)
     }
 //    割り算の問題を作る関数
     func makedivdeNewQuestion(){
-        let bigNum = searchbigNum(n1: num7, n2: num8)
         while true {
-            var a1 = Int.random(in: 1...bigNum)
-            var a2 = Int.random(in: 1...bigNum)
-            if a1 > a2{
+            var a1 = Int.random(in: 1...num7)
+            var a2 = Int.random(in: 1...num8)
+            debugPrint(a1)
+            debugPrint(a2)
+            if a1 < a2{
                 let tmp = a1
                 a1 = a2
                 a2 = tmp
                 
             }
+            debugPrint(a1)
+            debugPrint(a2)
             if a1 % a2 == 0{
+                debugPrint(a1)
+                debugPrint(a2)
                 questionLabel.text = "\(a1) ÷ \(a2) = "
                 answer = a1 / a2
                 break

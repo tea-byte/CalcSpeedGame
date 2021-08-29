@@ -41,6 +41,7 @@ class ResultViewController: UIViewController {
             default:
                 frontRecord = ""
         }
+//        setModeMaxRecode(mode: mode)
         setModeLabel(mode: mode)
         recordLabel.text = "あなたの記録:\(point)P"
         maxpoint = setModeMaxRecode(mode: mode)

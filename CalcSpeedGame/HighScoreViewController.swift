@@ -26,7 +26,7 @@ class HighScoreViewController: UIViewController {
         minusLabel.text =  String(UserDefaults.standard.integer(forKey: "minusrecord")) + "P"
         timesLabel.text =  String(UserDefaults.standard.integer(forKey: "timesrecord")) + "P"
         divideLabel.text = String(UserDefaults.standard.integer(forKey: "dividerecord")) + "P"
-        allLabel.text = String(UserDefaults.standard.integer(forKey: "dividerecord")) + "P"
+        allLabel.text = String(UserDefaults.standard.integer(forKey: "allrecord")) + "P"
         
 
         // Do any additional setup after loading the view.

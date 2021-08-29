@@ -107,12 +107,12 @@ class SetViewController: UIViewController, UITextFieldDelegate {
                 text1.text = String(testNum1)
 //                改善の必要性あり
             }else{
-                text1.text = String(1)
-                num1 = 1
+                text1.text = UserDefaults.standard.string(forKey: "num1")
+                num1 = UserDefaults.standard.integer(forKey: "num1")
             }
         }else{
-            text1.text = String(1)
-            num1 = 1
+            text1.text = UserDefaults.standard.string(forKey: "num1")
+            num1 = UserDefaults.standard.integer(forKey: "num1")
         }
     }
     
@@ -127,12 +127,12 @@ class SetViewController: UIViewController, UITextFieldDelegate {
 
 //                改善の必要性あり
             }else{
-                text2.text = String(1)
-                num2 = 1
+                text2.text = UserDefaults.standard.string(forKey: "num2")
+                num2 = UserDefaults.standard.integer(forKey: "num2")
             }
         }else{
-            text2.text = String(1)
-            num2 = 1
+            text2.text = UserDefaults.standard.string(forKey: "num2")
+            num2 = UserDefaults.standard.integer(forKey: "num2")
         }
     }
     
@@ -148,12 +148,12 @@ class SetViewController: UIViewController, UITextFieldDelegate {
 
 //                改善の必要性あり
             }else{
-                text3.text = String(1)
-                num3 = 1
+                text3.text = UserDefaults.standard.string(forKey: "num3")
+                num3 = UserDefaults.standard.integer(forKey: "num3")
             }
         }else{
-            text3.text = String(1)
-            num3 = 1
+            text3.text = UserDefaults.standard.string(forKey: "num3")
+            num3 = UserDefaults.standard.integer(forKey: "num3")
         }
     }
     
@@ -169,12 +169,12 @@ class SetViewController: UIViewController, UITextFieldDelegate {
 //                vc.num4 = testNum4
 //                改善の必要性あり
             }else{
-                text4.text = String(1)
-                num4 = 1
+                text4.text = UserDefaults.standard.string(forKey: "num4")
+                num4 = UserDefaults.standard.integer(forKey: "num4")
             }
         }else{
-            text5.text = String(1)
-            num4 = 1
+            text5.text = UserDefaults.standard.string(forKey: "num4")
+            num4 = UserDefaults.standard.integer(forKey: "num4")
         }
     }
     
@@ -187,12 +187,12 @@ class SetViewController: UIViewController, UITextFieldDelegate {
 
 //                改善の必要性あり
             }else{
-                text5.text = String(1)
-                num5 = 1
+                text5.text = UserDefaults.standard.string(forKey: "num5")
+                num5 = UserDefaults.standard.integer(forKey: "num5")
             }
         }else{
-            text5.text = String(1)
-            num5 = 1
+            text5.text = UserDefaults.standard.string(forKey: "num5")
+            num5 = UserDefaults.standard.integer(forKey: "num5")
         }
     }
     
@@ -200,35 +200,35 @@ class SetViewController: UIViewController, UITextFieldDelegate {
         var num6 : Int? = Int(text6.text!)
         if let testNum6 = num6{
             if testNum6 != 0{
-                UserDefaults.standard.setValue(testNum6, forKey: "num1")
+                UserDefaults.standard.setValue(testNum6, forKey: "num6")
                 text6.text = String(testNum6)
 
 //                改善の必要性あり
             }else{
-                text6.text = String(1)
-                num6 = 1
+                text6.text = UserDefaults.standard.string(forKey: "num6")
+                num6 = UserDefaults.standard.integer(forKey: "num6")
             }
         }else{
-            text6.text = String(1)
-            num6 = 1
+            text6.text = UserDefaults.standard.string(forKey: "num6")
+            num6 = UserDefaults.standard.integer(forKey: "num6")
         }
     }
     
     @IBAction func textSet7(_ sender: Any) {
-        var num7 : Int? = Int(text1.text!)
+        var num7 : Int? = Int(text7.text!)
         if let testNum7 = num7{
             if testNum7 != 0{
-                UserDefaults.standard.setValue(testNum7, forKey: "num1")
+                UserDefaults.standard.setValue(testNum7, forKey: "num7")
                 text7.text = String(testNum7)
  
 //                改善の必要性あり
             }else{
-                text7.text = String(1)
+                text7.text = UserDefaults.standard.string(forKey: "num7")
                 num7 = 1
             }
         }else{
-            text7.text = String(1)
-            num7 = 1
+            text7.text = UserDefaults.standard.string(forKey: "num7")
+            num7 = UserDefaults.standard.integer(forKey: "num7")
         }
     }
     
@@ -236,16 +236,16 @@ class SetViewController: UIViewController, UITextFieldDelegate {
         var num8 : Int? = Int(text8.text!)
         if let testNum8 = num8{
             if testNum8 != 0{
-                UserDefaults.standard.setValue(testNum8, forKey: "num1")
+                UserDefaults.standard.setValue(testNum8, forKey: "num8")
                 text8.text = String(testNum8)
 //                改善の必要性あり
             }else{
-                text8.text = String(1)
-                num8 = 1
+                text8.text = UserDefaults.standard.string(forKey: "num8")
+                num8 = UserDefaults.standard.integer(forKey: "num8")
             }
         }else{
-            text8.text = String(1)
-            num8 = 1
+            text8.text = UserDefaults.standard.string(forKey: "num8")
+            num8 = UserDefaults.standard.integer(forKey: "num8")
         }
     }
     

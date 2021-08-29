@@ -48,9 +48,9 @@ class ModeViewController: UIViewController {
 
     @IBAction func minusButton(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "goToCalc") as! CalcViewController
+        vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
         sound.playSound(name: "decide")
-        vc.modalPresentationStyle = .fullScreen
         mode = 2
         vc.mode = mode
     }
