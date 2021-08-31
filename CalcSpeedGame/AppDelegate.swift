@@ -9,7 +9,7 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
+
     var num1 = Int()
     var num2 = Int()
     var num3 = Int()
@@ -18,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var num6 = Int()
     var num7 = Int()
     var num8 = Int()
+    
+    let colors = Colors()
     
 
 
@@ -41,6 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
+
 
 
 

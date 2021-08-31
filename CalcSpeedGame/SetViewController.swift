@@ -67,8 +67,8 @@ class SetViewController: UIViewController, UITextFieldDelegate {
         text6.text = String(UserDefaults.standard.integer(forKey: "num6"))
         text7.text = String(UserDefaults.standard.integer(forKey: "num7"))
         text8.text = String(UserDefaults.standard.integer(forKey: "num8"))
-        debugPrint(UserDefaults.standard.integer(forKey: "num3"))
-        setUpGradation()
+
+
 
         
         observe(text1)
@@ -283,20 +283,7 @@ class SetViewController: UIViewController, UITextFieldDelegate {
         }
     }
 
-    func setTextField(){
-        for i in 1...8{
-            text1.text = String(UserDefaults.standard.integer(forKey: "num\(i)"))
-        }
-    }
-    
-    func setUpGradation() {
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height)
-        gradientLayer.colors = [colors.blue.cgColor, colors.webSafeColor.cgColor]
-        gradientLayer.startPoint = CGPoint.init(x: 0, y: 0)
-        gradientLayer.endPoint = CGPoint.init(x: 1, y: 1)
-        imView.layer.addSublayer(gradientLayer)
-    }
+
     
 
 

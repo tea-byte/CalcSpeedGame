@@ -265,7 +265,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WnH-hS-WEB">
                                 <rect key="frame" x="84.5" y="577" width="206" height="36"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="ハイスコア"/>
+                                <state key="normal" title="ハイスコア">
+                                    <color key="titleColor" name="AccentColor"/>
+                                </state>
                                 <connections>
                                     <action selector="highScoreButto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yFX-EW-U3A"/>
                                 </connections>
@@ -384,7 +386,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ハイスコア" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68E-Te-dsE">
                                 <rect key="frame" x="69" y="10" width="237" height="36"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EyV-nR-fgs">

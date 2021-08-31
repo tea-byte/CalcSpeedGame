@@ -20,12 +20,13 @@ class ViewController: UIViewController{
     var player: AVAudioPlayer?
     let colors = Colors()
     let sound = Sound()
+
+    
     
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        setUpGradation()
         setup()
         appDelegate.num1 = UserDefaults.standard.integer(forKey: "num1")
         appDelegate.num2 = UserDefaults.standard.integer(forKey: "num2")
@@ -41,14 +42,6 @@ class ViewController: UIViewController{
         
     }
     
-    func setUpGradation() {
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height)
-        gradientLayer.colors = [colors.blue.cgColor, colors.webSafeColor.cgColor]
-        gradientLayer.startPoint = CGPoint.init(x: 0, y: 0)
-        gradientLayer.endPoint = CGPoint.init(x: 1, y: 1)
-        imView.layer.addSublayer(gradientLayer)
-    }
 
     @IBAction func highScoreButto(_ sender: Any) {
         self.performSegue(withIdentifier: "toHighScore", sender: nil)

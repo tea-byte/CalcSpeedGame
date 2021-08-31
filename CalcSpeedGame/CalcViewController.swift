@@ -37,7 +37,7 @@ class CalcViewController: UIViewController{
     var mode : Int = 0
     var answer :Int = 0
     var point : Int = 0
-    var time : Int = 10
+    var time : Int = 30
     
     
 
@@ -61,8 +61,8 @@ class CalcViewController: UIViewController{
         
         
         
-        debugPrint(mode)
-        debugPrint(num1)
+//        debugPrint(mode)
+//        debugPrint(num1)
         
         if mode == 5{
             let select = Int.random(in: 1...4)
