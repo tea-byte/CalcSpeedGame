@@ -17,10 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y7R-Qr-4f6">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="問題範囲" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQ5-zF-ksj">
                                 <rect key="frame" x="107" y="20" width="161" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
@@ -215,7 +211,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imView" destination="Y7R-Qr-4f6" id="AYB-hA-z8E"/>
                         <outlet property="text1" destination="k1e-qC-m92" id="bui-eH-qB7"/>
                         <outlet property="text2" destination="f0W-23-WCH" id="TVZ-oF-ZbU"/>
                         <outlet property="text3" destination="1vQ-Q9-1VC" id="Odw-rL-W6C"/>
@@ -238,10 +233,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bMu-fY-pcm">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="スピード計算ゲーム" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrs-UV-s9I">
                                 <rect key="frame" x="51" y="100" width="273" height="36"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
@@ -301,7 +292,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="B17-O0-Ria"/>
                     <connections>
-                        <outlet property="imView" destination="bMu-fY-pcm" id="jLJ-oL-Rvx"/>
                         <segue destination="f37-Kt-VxR" kind="presentation" identifier="toMode" modalPresentationStyle="fullScreen" id="etb-M9-fyd"/>
                         <segue destination="XWt-I2-Nke" kind="presentation" identifier="toHighScore" modalPresentationStyle="fullScreen" id="cMu-Rc-yUQ"/>
                     </connections>
@@ -552,8 +542,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="残り10秒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wg4-T8-Wz4">
-                                <rect key="frame" x="285" y="20" width="70" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="残り30秒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wg4-T8-Wz4">
+                                <rect key="frame" x="282.5" y="20" width="72.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

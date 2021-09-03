@@ -15,6 +15,12 @@
 		1D284B9926AFBE38005E2B21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D284B9726AFBE38005E2B21 /* Main.storyboard */; };
 		1D284B9B26AFBE3A005E2B21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D284B9A26AFBE3A005E2B21 /* Assets.xcassets */; };
 		1D284B9E26AFBE3A005E2B21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D284B9C26AFBE3A005E2B21 /* LaunchScreen.storyboard */; };
+		1D34C19926E1B14E00E10DC4 /* スクリーンショット 2021-09-02 4.49.21.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D34C19326E1B14E00E10DC4 /* スクリーンショット 2021-09-02 4.49.21.png */; };
+		1D34C19A26E1B14E00E10DC4 /* スクリーンショット 2021-09-02 4.49.11.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D34C19426E1B14E00E10DC4 /* スクリーンショット 2021-09-02 4.49.11.png */; };
+		1D34C19B26E1B14E00E10DC4 /* スクリーンショット 2021-09-02 4.48.45.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D34C19526E1B14E00E10DC4 /* スクリーンショット 2021-09-02 4.48.45.png */; };
+		1D34C19C26E1B14E00E10DC4 /* スクリーンショット 2021-09-02 4.49.29.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D34C19626E1B14E00E10DC4 /* スクリーンショット 2021-09-02 4.49.29.png */; };
+		1D34C19D26E1B14E00E10DC4 /* スクリーンショット 2021-09-02 4.48.18.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D34C19726E1B14E00E10DC4 /* スクリーンショット 2021-09-02 4.48.18.png */; };
+		1D34C19E26E1B14E00E10DC4 /* スクリーンショット 2021-09-02 4.48.33.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D34C19826E1B14E00E10DC4 /* スクリーンショット 2021-09-02 4.48.33.png */; };
 		1D3A080326C9014100A0901E /* HighScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3A080226C9014100A0901E /* HighScoreViewController.swift */; };
 		1D5A46AF26CE12E10088FA8C /* decide.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D5A46AE26CE12E10088FA8C /* decide.mp3 */; };
 		1D872CD326D67539009E3300 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D872CD226D67539009E3300 /* Sound.swift */; };
@@ -36,6 +42,12 @@
 		1D284B9A26AFBE3A005E2B21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D284B9D26AFBE3A005E2B21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D284B9F26AFBE3A005E2B21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D34C19326E1B14E00E10DC4 /* スクリーンショット 2021-09-02 4.49.21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "スクリーンショット 2021-09-02 4.49.21.png"; sourceTree = "<group>"; };
+		1D34C19426E1B14E00E10DC4 /* スクリーンショット 2021-09-02 4.49.11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "スクリーンショット 2021-09-02 4.49.11.png"; sourceTree = "<group>"; };
+		1D34C19526E1B14E00E10DC4 /* スクリーンショット 2021-09-02 4.48.45.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "スクリーンショット 2021-09-02 4.48.45.png"; sourceTree = "<group>"; };
+		1D34C19626E1B14E00E10DC4 /* スクリーンショット 2021-09-02 4.49.29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "スクリーンショット 2021-09-02 4.49.29.png"; sourceTree = "<group>"; };
+		1D34C19726E1B14E00E10DC4 /* スクリーンショット 2021-09-02 4.48.18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "スクリーンショット 2021-09-02 4.48.18.png"; sourceTree = "<group>"; };
+		1D34C19826E1B14E00E10DC4 /* スクリーンショット 2021-09-02 4.48.33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "スクリーンショット 2021-09-02 4.48.33.png"; sourceTree = "<group>"; };
 		1D3A080226C9014100A0901E /* HighScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreViewController.swift; sourceTree = "<group>"; };
 		1D5A46AE26CE12E10088FA8C /* decide.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = decide.mp3; path = "../../../Music/Music/Media.localized/Music/Unknown Artist/Unknown Album/decide.mp3"; sourceTree = "<group>"; };
 		1D872CD226D67539009E3300 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
@@ -93,8 +105,23 @@
 				1D284B9A26AFBE3A005E2B21 /* Assets.xcassets */,
 				1D284B9C26AFBE3A005E2B21 /* LaunchScreen.storyboard */,
 				1D284B9F26AFBE3A005E2B21 /* Info.plist */,
+				1D34C19226E1B14E00E10DC4 /* 計算ゲーム_スクショ */,
 			);
 			path = CalcSpeedGame;
+			sourceTree = "<group>";
+		};
+		1D34C19226E1B14E00E10DC4 /* 計算ゲーム_スクショ */ = {
+			isa = PBXGroup;
+			children = (
+				1D34C19326E1B14E00E10DC4 /* スクリーンショット 2021-09-02 4.49.21.png */,
+				1D34C19426E1B14E00E10DC4 /* スクリーンショット 2021-09-02 4.49.11.png */,
+				1D34C19526E1B14E00E10DC4 /* スクリーンショット 2021-09-02 4.48.45.png */,
+				1D34C19626E1B14E00E10DC4 /* スクリーンショット 2021-09-02 4.49.29.png */,
+				1D34C19726E1B14E00E10DC4 /* スクリーンショット 2021-09-02 4.48.18.png */,
+				1D34C19826E1B14E00E10DC4 /* スクリーンショット 2021-09-02 4.48.33.png */,
+			);
+			name = "計算ゲーム_スクショ";
+			path = "../../../Desktop/計算ゲーム_スクショ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,11 +181,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D34C19926E1B14E00E10DC4 /* スクリーンショット 2021-09-02 4.49.21.png in Resources */,
+				1D34C19B26E1B14E00E10DC4 /* スクリーンショット 2021-09-02 4.48.45.png in Resources */,
+				1D34C19C26E1B14E00E10DC4 /* スクリーンショット 2021-09-02 4.49.29.png in Resources */,
 				1DA6549826C55ECD001A4123 /* incorrect.mp3 in Resources */,
 				1D284B9E26AFBE3A005E2B21 /* LaunchScreen.storyboard in Resources */,
 				1D5A46AF26CE12E10088FA8C /* decide.mp3 in Resources */,
+				1D34C19A26E1B14E00E10DC4 /* スクリーンショット 2021-09-02 4.49.11.png in Resources */,
 				1D284B9B26AFBE3A005E2B21 /* Assets.xcassets in Resources */,
+				1D34C19D26E1B14E00E10DC4 /* スクリーンショット 2021-09-02 4.48.18.png in Resources */,
 				1D284B9926AFBE38005E2B21 /* Main.storyboard in Resources */,
+				1D34C19E26E1B14E00E10DC4 /* スクリーンショット 2021-09-02 4.48.33.png in Resources */,
 				1DA6549626C55EBC001A4123 /* correct.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
