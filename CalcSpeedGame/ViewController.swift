@@ -36,6 +36,16 @@ class ViewController: UIViewController{
         appDelegate.num6 = UserDefaults.standard.integer(forKey: "num6")
         appDelegate.num7 = UserDefaults.standard.integer(forKey: "num7")
         appDelegate.num8 = UserDefaults.standard.integer(forKey: "num8")
+    
+        print(appDelegate.num1)
+        print(appDelegate.num2)
+        print(appDelegate.num3)
+        print(appDelegate.num4)
+        print(appDelegate.num5)
+        print(appDelegate.num6)
+        print(appDelegate.num7)
+        print(appDelegate.num8)
+        
         
 
 

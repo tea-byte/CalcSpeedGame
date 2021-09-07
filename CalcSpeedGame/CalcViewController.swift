@@ -37,7 +37,7 @@ class CalcViewController: UIViewController{
     var mode : Int = 0
     var answer :Int = 0
     var point : Int = 0
-    var time : Int = 30
+    var time : Int = 10
     
     
 
@@ -50,14 +50,14 @@ class CalcViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        num1 = appDelegate.num1
-        num2 = appDelegate.num2
-        num3 = appDelegate.num3
-        num4 = appDelegate.num4
-        num5 = appDelegate.num5
-        num6 = appDelegate.num6
-        num7 = appDelegate.num7
-        num8 = appDelegate.num8
+//        num1 = appDelegate.num1
+//        num2 = appDelegate.num2
+//        num3 = appDelegate.num3
+//        num4 = appDelegate.num4
+//        num5 = appDelegate.num5
+//        num6 = appDelegate.num6
+//        num7 = appDelegate.num7
+//        num8 = appDelegate.num8
         
         
         
@@ -96,8 +96,24 @@ class CalcViewController: UIViewController{
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        debugPrint(mode)
-        debugPrint(num1)
+        num1 = appDelegate.num1
+        num2 = appDelegate.num2
+        num3 = appDelegate.num3
+        num4 = appDelegate.num4
+        num5 = appDelegate.num5
+        num6 = appDelegate.num6
+        num7 = appDelegate.num7
+        num8 = appDelegate.num8
+        
+        print(num1)
+        print(appDelegate.num2)
+        print(appDelegate.num3)
+        print(appDelegate.num4)
+        print(appDelegate.num5)
+        print(appDelegate.num6)
+        print(appDelegate.num7)
+        print(appDelegate.num8)
+        
 
         if mode == 1{
             print("足し算モード")
@@ -180,6 +196,7 @@ class CalcViewController: UIViewController{
 //     結果画面にpointを渡す関数
 
     @objc func onButton(_ sender:UIButton){
+        
         let input = Int(sender.currentTitle!)
         if input == answer {
             resultLabel.text = "前回の問題　: 正解"
@@ -208,23 +225,31 @@ class CalcViewController: UIViewController{
     }
 //    足し算の問題を作る関数
     func makeNewQuestion(){
+        let n: Int
+        n = searchbigNum(n1:  num1, n2: num2)
 
-        let a1 = Int.random(in: 0...num1)
-        let a2 = Int.random(in: 0...num2)
+        let a1 = Int.random(in: 0...n)
+        let a2 = Int.random(in: 0...n)
         questionLabel.text = "\(a2) + \(a1) = "
         answer = a2 + a1
     }
 //    引き算の問題をつくる関数
     func makeMinusNewQuestion(){
-        let a1 = Int.random(in: 0...num3)
-        let a2 = Int.random(in: 0...num4)
+        let n: Int
+        n = searchbigNum(n1:  num3, n2: num4)
+
+        let a1 = Int.random(in: 0...n)
+        let a2 = Int.random(in: 0...n)
         questionLabel.text = "\(a2) - \(a1) = "
         answer = a2 - a1
     }
 //    掛け算の問題を作る関数
     func makeTimesNewQuestion(){
-        let a1 = Int.random(in: 0...num5)
-        let a2 = Int.random(in: 0...num6)
+        let n: Int
+        n = searchbigNum(n1:  num5, n2: num6)
+
+        let a1 = Int.random(in: 0...n)
+        let a2 = Int.random(in: 0...n)
         questionLabel.text = "\(a2) × \(a1) = "
         answer = a2 * a1
         print(answer)
@@ -232,8 +257,11 @@ class CalcViewController: UIViewController{
 //    割り算の問題を作る関数
     func makedivdeNewQuestion(){
         while true {
-            var a1 = Int.random(in: 1...num7)
-            var a2 = Int.random(in: 1...num8)
+            let n: Int
+            n = searchbigNum(n1:  num7, n2: num8)
+
+            var a1 = Int.random(in: 1...n)
+            var a2 = Int.random(in: 1...n)
             debugPrint(a1)
             debugPrint(a2)
             if a1 < a2{
