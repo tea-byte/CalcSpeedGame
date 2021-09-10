@@ -127,8 +127,9 @@ class CalcViewController: UIViewController{
         }else if mode == 4{
             makedivdeNewQuestion()
             print("割り算モード")
-        }else{
+        }else if mode == 5{
             let select = Int.random(in: 1...4)
+            print(select)
             switch select {
                 case 1:
                     makeNewQuestion()
@@ -141,6 +142,9 @@ class CalcViewController: UIViewController{
                 default:
                     makeNewQuestion()
             }
+            
+        }else{
+            
         }
         setButttonTitle()
 
@@ -218,38 +222,60 @@ class CalcViewController: UIViewController{
                 makeTimesNewQuestion()
             case 4:
                 makedivdeNewQuestion()
-            default:
-                makeNewQuestion()
+            case 5:
+                let select = Int.random(in: 1...4)
+                switch select {
+                    case 1:
+                        makeNewQuestion()
+                    case 2:
+                        makeMinusNewQuestion()
+                    case 3:
+                        makeTimesNewQuestion()
+                    case 4:
+                        makedivdeNewQuestion()
+                    default:
+                        makeNewQuestion()
+                }
+        default:
+            makeNewQuestion()
         }
         setButttonTitle()
     }
 //    足し算の問題を作る関数
     func makeNewQuestion(){
-        let n: Int
-        n = searchbigNum(n1:  num1, n2: num2)
+        let small: Int
+        let big : Int
+        let n = searchbigNum(n1:  num1, n2: num2)
+        small = n.0
+        big = n.1
 
-        let a1 = Int.random(in: 0...n)
-        let a2 = Int.random(in: 0...n)
+        let a1 = Int.random(in: small...big)
+        let a2 = Int.random(in: small...big)
         questionLabel.text = "\(a2) + \(a1) = "
         answer = a2 + a1
     }
 //    引き算の問題をつくる関数
     func makeMinusNewQuestion(){
-        let n: Int
-        n = searchbigNum(n1:  num3, n2: num4)
-
-        let a1 = Int.random(in: 0...n)
-        let a2 = Int.random(in: 0...n)
+        let small: Int
+        let big : Int
+        let n = searchbigNum(n1:  num3, n2: num4)
+        small = n.0
+        big = n.1
+        let a1 = Int.random(in: small...big)
+        let a2 = Int.random(in: small...big)
         questionLabel.text = "\(a2) - \(a1) = "
         answer = a2 - a1
     }
 //    掛け算の問題を作る関数
     func makeTimesNewQuestion(){
-        let n: Int
-        n = searchbigNum(n1:  num5, n2: num6)
+        let small: Int
+        let big : Int
+        let n = searchbigNum(n1:  num5, n2: num6)
+        small = n.0
+        big = n.1
 
-        let a1 = Int.random(in: 0...n)
-        let a2 = Int.random(in: 0...n)
+        let a1 = Int.random(in: small...big)
+        let a2 = Int.random(in: small...big)
         questionLabel.text = "\(a2) × \(a1) = "
         answer = a2 * a1
         print(answer)
@@ -257,11 +283,14 @@ class CalcViewController: UIViewController{
 //    割り算の問題を作る関数
     func makedivdeNewQuestion(){
         while true {
-            let n: Int
-            n = searchbigNum(n1:  num7, n2: num8)
+            let small: Int
+            let big : Int
+            let n = searchbigNum(n1:  num7, n2: num8)
+            small = n.0
+            big = n.1
 
-            var a1 = Int.random(in: 1...n)
-            var a2 = Int.random(in: 1...n)
+            var a1 = Int.random(in: small...big)
+            var a2 = Int.random(in: small...big)
             debugPrint(a1)
             debugPrint(a2)
             if a1 < a2{
@@ -304,11 +333,17 @@ class CalcViewController: UIViewController{
             button4.setTitle(String(answerList[3]), for: .normal)
         }
     
-        func searchbigNum(n1:Int, n2:Int) -> Int{
-        if n1 > n2{
-            return n1
-        }else{
-            return n2
+        func searchbigNum(n1:Int, n2:Int) ->(Int, Int){
+            var big :Int
+            var small :Int
+            if n1 > n2{
+                big = n1
+                small = n2
+                return (small,big)
+            }else{
+                big = n2
+                small = n1
+                return(small, big)
         }
         
     }
